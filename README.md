@@ -1,16 +1,50 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# 📸 Gallery Pro - Professional Image Picker
 
-* [/composeApp](./composeApp/src) is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - [commonMain](./composeApp/src/commonMain/kotlin) is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    the [iosMain](./composeApp/src/iosMain/kotlin) folder would be the right place for such calls.
-    Similarly, if you want to edit the Desktop (JVM) specific part, the [jvmMain](./composeApp/src/jvmMain/kotlin)
-    folder is the appropriate location.
+<div align="center">
+  <h3>🎨 A Beautiful, Modern Image Picker for Android</h3>
+  <p>
+    <img src="https://img.shields.io/badge/Platform-Android-green.svg">
+    <img src="https://img.shields.io/badge/Language-Kotlin-blue.svg">
+    <img src="https://img.shields.io/badge/UI-Jetpack%20Compose-orange.svg">
+  </p>
+</div>
 
-* [/iosApp](./iosApp/iosApp) contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform,
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+---
 
+## ✨ Overview
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+**Gallery Pro** is a beautifully designed, animated image picker built with **Jetpack Compose Multiplatform** and powered by `moko-permissions`. It lets users request gallery permissions, select images, view metadata, and handle permission flows with grace — all in a sleek, polished interface.
+
+---
+
+## 🚀 Features
+
+- ✅ Runtime gallery permission handling (`moko-permissions`)
+- 🖼 Select and preview images from the gallery
+- 📦 View image details: file size, format
+- 🎨 Smooth animations: pulsing, rotating, fading, sliding
+- ❌ Handles all permission denial cases (including "Denied Always")
+- 🧠 ViewModel-driven UI state and clean architecture
+- ✍️ Fully Compose-based UI
+
+---
+
+## 📱 Screenshots
+
+<div align="center">
+  <img width="1453" height="837" alt="Screenshot 2025-08-04 at 8 43 43 PM" src="https://github.com/user-attachments/assets/fd6d2ca6-b68a-4b26-85fc-04c8b6707d0f" />
+  <img width="1470" height="956" alt="Screenshot 2025-08-04 at 8 48 46 PM" src="https://github.com/user-attachments/assets/397e3abe-2988-4019-949a-5c09d2365817" />
+  <img width="1470" height="956" alt="Screenshot 2025-08-04 at 8 49 27 PM" src="https://github.com/user-attachments/assets/07ec5225-4ae0-4117-9186-91e528bdbac3" />
+  <img width="1470" height="956" alt="Screenshot 2025-08-04 at 8 50 03 PM" src="https://github.com/user-attachments/assets/79552650-13bb-4e44-bc5a-981f910951e1" />
+</div>
+
+---
+
+## 🛠 Tech Stack
+
+- **Kotlin Multiplatform (KMP)**
+- **Jetpack Compose Multiplatform**
+- **moko-permissions**
+- **Coroutines**
+- **Material Design & Theming**
+- **ViewModel + State management**
